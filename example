@@ -1,0 +1,25 @@
+# Thanx for Developer of this python packgae #
+# I just make simple and clear example how to use it.
+# APRIL 10, 2019... EYASU. eyasutew1@gmail.com.
+import datetime
+from ethiopian_date import EthiopianDateConverter
+
+print(" from GC to ETHIOPIAN CALANDER")
+## from GC to ETHIOPIAN CALANDER
+ethi_date = EthiopianDateConverter.date_to_ethiopian(datetime.date.today())
+currentYear = ethi_date[0]
+currentMonth= ethi_date[1]
+currentDay= ethi_date[2]
+
+print(ethi_date)
+print(currentYear)
+print(currentMonth)
+print(currentDay)
+
+print("from ETHIOPIAN to GC")
+## from ETHIOPIAN to GC
+greg_date = EthiopianDateConverter.to_gregorian(2003, 4, 11)
+print(greg_date)##year-month-day
+print(greg_date.year)##year
+print(greg_date.month)##month
+print(greg_date.day)##day
